@@ -1,0 +1,108 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --orange: #e38826;
+    --cyan: #006970;
+    --dark-cyan: #004241;
+    --grey:#f2f2f2;
+    --transparent-white: rgba(255, 255, 255, 0.75);
+
+}
+
+body{
+    padding: 5.5rem 1.5rem;
+}
+h2{
+    font-family: 'Big Shoulders Display', sans-serif;
+    text-transform: uppercase;
+    font-size: 2.5;
+    color: var(--grey);
+    margin-block: 1.875rem;
+}
+
+p{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.9375rem;
+    color: var(--transparent-white);
+    margin-bottom: 1.875rem;
+
+}
+
+a{
+
+    font-family: 'Lexend Deca', sans-serif;
+    display: block;
+    text-decoration:none ;
+    border: 2px solid var(--grey);
+    width: fit-content;
+    font-size: 0.9375rem ;
+    padding: 0.75rem 2.5rem;
+    border-radius: 1.5625rem;
+    background: var(--grey);
+}
+section{
+    padding: 3rem;
+}
+
+.sedan{
+    background: var(--orange);
+    border-radius: 8px 8px 0 0;
+}
+
+.suv{
+    background: var(--cyan);
+
+}
+
+.luxuosos {
+    background: var(--dark-cyan);
+    border-radius: 0 0 8px 8px;
+}
+
+.sedan a {
+    color: var(--orange);
+}
+
+.suv a { 
+    color: var(--cyan);
+}
+
+.luxuosos a {
+    color: var(--dark-cyan);
+}
+
+@media (min-width: 920px ) {
+    bordy{
+        border: 1px solid red;
+        height: 100vh;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main {
+        display: flex;
+        max-width: 57.5rem;
+
+    }
+
+    a:hover{
+        background:var(--transparent-white) ;
+        color: var(--grey);
+    }
+
+    .sedan{
+        border-radius: 8px 0 0 8px;
+
+    }
+
+    .luxuosos{
+        border-radius: 0 8px 8px 0;
+    }
+}
+
